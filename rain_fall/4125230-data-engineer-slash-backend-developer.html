@@ -1,0 +1,666 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5911de361c","applicationID":"3392915","transactionName":"IlsLQktaXltTRhtARwNYDFVmRltDUxteX1ASGxZeVkI=","queueTime":0,"applicationTime":223,"agent":"","atts":"GhYQFANOEFJbRFhfSwRGOl9dFwgEDwIYElcMRAlZQFBAaFhVWVUQWxYuengYZlJYV1tCEE0WFl9NUG1eUhYOBQZVBUkUSlxGUmlaVV1XQw5HfXV0EnRXRlFVQBIUVwYIDRJlUxl2QlMPUEdLRA=="}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+
+        <link rel="icon" href="/system/production/assets/148518/original/favicon.ico?s=347d26551075f3de">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+        
+        <!-- PAGE CONTEXT VARS -->
+        
+        
+        
+
+        
+        
+
+        
+        
+        
+        
+         
+        <script>
+        //<![CDATA[
+        var tm_vars = {};
+         
+        tm_vars.search_url = "/jobs/4125230-data-engineer-slash-backend-developer?bid=370";
+        tm_vars.is_job_list = ("false"=="true");
+        tm_vars.is_home = ("false"=="true");
+         
+        //form states
+        tm_vars.param_per_page = ""; //?
+        tm_vars.param_page = "";
+         
+        //form params
+        tm_vars.param_q = "";
+        tm_vars.param_ns_location = "";
+        tm_vars.param_sort_by = "";
+         
+        //form radius
+        tm_vars.param_ns_dist = ""; //used in
+        tm_vars.param_ns_dist = isNaN(parseInt(tm_vars.param_ns_dist)) ? 50 : parseInt(tm_vars.param_ns_dist);
+        tm_vars.radius_in_miles = ("" == "mi");
+        //]]>
+        </script>
+
+        <!-- SEOINDEX/H1/TITLE LOGIC -->
+        <!-- not job list -->
+            
+                
+                
+                <link rel="canonical" href="/jobs/4125230-data-engineer-slash-backend-developer" />
+                
+                <meta name="description" content="Data Engineer / Backend Developer in Chennai,  - KLA">
+            
+
+        
+
+        <meta name="keywords" content="" />
+
+        
+        <title>Data Engineer / Backend Developer in Chennai,  - KLA</title>
+        <!-- end seo & meta -->
+
+        <link rel="stylesheet" media="screen" href="/assets/site/v3/manifest-945aa5e07381c4a2f37df436d1f636894dc57cacfee856c9ea7ee09f038c7eff.css" />
+<link rel="stylesheet" media="screen" href="/stylesheets/theme.css" />
+<script src="/assets/site/v3/manifest-883bf9f1681df373d1b949ca43ee4a9fe48d1676de831948365d78b49458e02e.js"></script>
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+  csns.maps.fetch_location_url = "https://careers.kla-tencor.com/locations/fetch";
+
+//]]>
+</script>
+
+<script src="/javascripts/theme.js"></script>
+<link rel="alternate" type="application/atom+xml" title="ATOM" href="https://careers.kla-tencor.com/timeline.atom" />
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="/system/production/assets/66429/original/ie8.css">
+            <script src="/system/production/assets/66427/original/ie8-head.js"></script>
+        <![endif]-->
+        <script src="/system/production/assets/87383/original/talemetry.jobsearch.1.2.js?s=347d26551075f3de" type="text/javascript"></script>
+    
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5458240-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-5458240-1');
+</script> 
+  </head>
+    <body id="jobs-4125230-data-engineer-slash-backend-developer" class="tal scroll">
+        
+        <div class="hide"><img src="/system/production/assets/92957/original/socia-media-share--kla-tencor.jpg?s=347d26551075f3de" alt="KLA Careers" /></div>
+
+        <div id="page-container" class="fadeIn">
+
+            <div id="header">
+                <div class="header__top-menu">
+                    <div class="row">
+                        <div class="column">
+                            <span class="country-button">
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                  <g fill="#FFF" fill-rule="evenodd">
+                                    <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm5.52 4.8H11.2c-.24-.96-.64-1.92-1.12-2.88 1.44.56 2.72 1.52 3.44 2.88zM8 1.6c.64.96 1.2 2 1.52 3.2H6.48C6.8 3.68 7.36 2.56 8 1.6zm-6.16 8C1.68 9.12 1.6 8.56 1.6 8s.08-1.12.24-1.6h2.72c-.08.56-.08 1.04-.08 1.6s.08 1.04.08 1.6H1.84zm.64 1.6h2.4c.24.96.64 2 1.12 2.88-1.52-.56-2.8-1.52-3.52-2.88zM4.8 4.8H2.4c.8-1.36 2-2.32 3.44-2.88-.4.96-.72 1.92-1.04 2.88zM8 14.4c-.64-.96-1.2-2-1.52-3.2h3.04c-.32 1.12-.88 2.24-1.52 3.2zm1.84-4.8H6.16C6.08 9.04 6 8.56 6 8s.08-1.12.16-1.6h3.76c.08.48.16 1.04.16 1.6s-.16 1.04-.24 1.6zm.24 4.48c.48-.88.88-1.84 1.12-2.88h2.32c-.72 1.28-2 2.32-3.44 2.88zm1.44-4.48c.08-.56.08-1.04.08-1.6s-.08-1.04-.08-1.6h2.72c.16.48.24 1.04.24 1.6s-.08 1.12-.24 1.6h-2.72z" fill-rule="nonzero"></path>
+                                  </g>
+                                </svg>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                <div class="country__items text-left">
+                                    <a href="https://www.kla-tencor.com/" target="_blank">USA (English)</a>
+                                    <a href="https://www.kla-tencor.com/zh-hans" target="_blank">China (中文)</a>
+                                    <a href="https://www.kla-tencor.com/ja" target="_blank">Japan (日本語)</a>
+                                    <a href="https://www.kla-tencor.com/ko" target="_blank">Korea (한국어)</a>
+                                    <a href="https://www.kla-tencor.com/zh-hant" target="_blank">Taiwan (國語)</a>
+                                </div>
+                            </span>
+                            <a href="http://www.ymsmagazine.com/" target="_blank">YMS Magazine <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            <a href="https://www.kla-tencor.com/foundation/" target="_blank">KLA Foundation <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            <!-- <a href="https://www.orbotech.com/" target="_blank">Orbotech <i class="fa fa-external-link" aria-hidden="true"></i></a> -->
+                        </div>
+                    </div>
+                </div><!--/.header__top-menu-->
+                <div class="header__corporate-menu">
+                    <div class="row">
+                        <div class="small-8 medium-4 large-3 columns header__coporate-menu-logo">
+                            <a href="https://careers.kla-tencor.com/"><img src="/system/production/assets/142094/original/kla-logo.png?s=347d26551075f3de" alt="KLA logo" /></a>
+                        </div>
+                        
+                        <div class="small-4 medium-8 large-9 columns header__corporate-menu-mobile">
+                            <div class="mobile-menu">
+                                <div class="mobile-menu__burger">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="large-9 columns header__corporate-menu-desktop">
+                            <div id="top-menu">
+                                <ul class="clearfix">
+                                    <li><a href="http://www.kla-tencor.com/vision">Vision</a></li>
+                                    <li><a href="https://www.kla-tencor.com/company">Company</a></li>
+                                    <li><a href="https://www.kla-tencor.com/products">Products</a></li>
+                                    <li><a href="https://www.kla-tencor.com/services">Services</a></li>
+                                    <li><a href="https://careers.kla-tencor.com/">Careers</a></li>
+                                    <li><a href="http://ir.kla-tencor.com/">Investors</a></li>
+                                    <li><a href="https://www.kla-tencor.com/contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.header__corporate-menu-->
+
+                <div class="row">
+                    <div class="column">
+                        <div class="header__careers-menu">
+                            <div class="row">
+                                <div class="medium-5 large-3 columns header__careers-menu-select">
+                                    <div class="header__careers-menu-option-outer">
+                                        <select id="header__careers-menu-option">
+                                            <option value="">Global Locations</option>
+                                            <option value="/search/jobs/?gc=europe&location_country[]=Albania&location_country[]=Andorra&location_country[]=Armenia&location_country[]=Austria&location_country[]=Azerbaijan&location_country[]=Belarus&location_country[]=Belgium&location_country[]=Bosnia and Herzegovina&location_country[]=Bulgaria&location_country[]=Croatia&location_country[]=Cyprus&location_country[]=Czech Republic&location_country[]=Denmark&location_country[]=Estonia&location_country[]=Finland&location_country[]=France&location_country[]=Georgia&location_country[]=Germany&location_country[]=Greece&location_country[]=Hungary&location_country[]=Iceland&location_country[]=Ireland&location_country[]=Italy&location_country[]=Kazakhstan&location_country[]=Kosovo&location_country[]=Latvia&location_country[]=Liechtenstein&location_country[]=Lithuania&location_country[]=Luxembourg&location_country[]=Macedonia&location_country[]=Malta&location_country[]=Moldova&location_country[]=Monaco&location_country[]=Montenegro&location_country[]=Netherlands&location_country[]=Norway&location_country[]=Poland&location_country[]=Portugal&location_country[]=Romania&location_country[]=Russia&location_country[]=San Marino&location_country[]=Serbia&location_country[]=Slovakia&location_country[]=Slovenia&location_country[]=Spain&location_country[]=Sweden&location_country[]=Switzerland&location_country[]=Turkey&location_country[]=Ukraine&location_country[]=United Kingdom&location_country[]=Vatican City">Europe</option>
+                                            <option value="/search/jobs/?gc=china&location[]=China">China</option>
+                                            <option value="/search/jobs/in/country/india">India</option>
+                                            <option value="/search/jobs/in/country/israel">Israel</option>
+                                            <option value="/search/jobs/in/country/japan">Japan</option>
+                                            <option value="/search/jobs/in/country/korea-republic-of">Korea</option>
+                                            <option value="/search/jobs/in/country/singapore">Singapore</option>
+                                            <option value="/search/jobs/in/country/taiwan">Taiwan</option>
+                                            <option value="/search/jobs/in/country/united-states">United States</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="medium-7 large-4 columns header__careers-menu-list">
+                                    <ul class="clearfix">
+                                        <li><a href="/pages/work">Work</a></li>
+                                        <li><a href="/pages/life">Life</a></li>
+                                        <li><a href="/pages/how-we-hire">How We Hire</a></li>
+                                        <li><a href="/pages/events">Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="large-5 columns header__careers-menu-buttons small-text-left medium-text-left large-text-right">
+                                    <a href="/jobs/search" class="button-primary button-primary-violet">All KLA Jobs</a>
+                                    <!-- <a href="http://klatencorcareerscollege-dev.ttcportals.com/jobs/search" class="button-primary button-primary-violet">All University Jobs</a> -->
+                                    <!-- <a href="https://www.orbotech.com/careers/jobs-orbotech" target="_blank" class="button-primary button-primary-violet">All Orbotech Jobs &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a> -->
+                                </div>
+                            </div>
+                        </div><!--/.header__careers-menu-->
+                    </div>
+                </div>
+            </div><!--/#header-->
+            
+            <div class="cs_block cs_template_content cs_template_content_job">
+  <div class="cs_container">
+    <div class="cs_content cs_cfix">
+    <!-- BEGIN PAGE -->
+      
+
+    
+        <script type="application/ld+json">
+            {
+                "@context" : "http://schema.org/",
+                "@type" : "JobPosting",
+                "title" : "Data Engineer / Backend Developer",
+                "description" : "<p><b>Company Overview<\/b> <\/p> <p><span style=\"color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;  background-color: rgb(255, 255, 255); display: inline !important; float: none;\">Calling the adventurers ready to join a company that's pushing the limits of nanotechnology to keep the digital revolution rolling. At KLA, we're making technology advancements that are bigger—and tinier—than the world has ever seen.<\/span><br style=\"color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;  background-color: rgb(255, 255, 255);\"><br style=\"color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;  background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;  background-color: rgb(255, 255, 255); display: inline !important; float: none;\">Who are we?  We research, develop, and manufacture the world's most advanced inspection and measurement equipment for the semiconductor and nanoelectronics industries. We enable the digital age by pushing the boundaries of technology, creating tools capable of finding defects smaller than a wavelength of visible light. We create smarter processes so that technology leaders can manufacture high-performance chips—the kind in that phone in your pocket, the tablet on your desk and nearly every electronic device you own—faster and better. We're passionate about creating solutions that drive progress and help people do what wouldn't be possible without us.  The future is calling. Will you answer?<\/span><\/p><p><b>Group/Division<\/b> <\/p> <p>	The Information Technology (IT) group at KLA is involved in every aspect of the global business. IT’s mission is to enable business growth and productivity by connecting people, process, and technology. It focuses not only on enhancing the technology that enables our business to thrive but also on how employees use and are empowered by technology. This integrated approach to customer service, creativity and technological excellence enables employee productivity, business analytics, and process excellence.<\/p><p><b>Responsibilities<\/b> <\/p> <p>\n	<strong><em>Job Role: <\/em><\/strong><\/p>\n<ul>\n	<li>\n		<p>\n			This person would be a data engineer and backend developer for the IT Engineering application development team. This team member will be expected to work across several active projects to lead the development of the backend data workflow system that will integrate data from our existing back-end source to the algo, application and UI stack. Some projects are already in progress, to this developer would need to quickly come up to speed and continue development through project completion. Other projects are just getting started, and this developer would need to build the front end for the entire project from scratch. <\/p>\n		<p>\n			In addition to the core development tasks, we expect this person to monitor the technology landscape and ensure that the technologies that we are using are appropriate. We want to be sure that we are using the most feature rich tools, without incurring too much technology risk. <\/p>\n		<p>\n			This position is considered a senior position, so it assumed that educating other team members and mentoring junior teammates is included in the job responsibilities.<\/p>\n	<\/li>\n<\/ul>\n<p>\n	<strong><u>Responsibilities:<\/u><\/strong><\/p>\n<p>\n	Lead multiple data engineering / backend development projects simultaneously.<\/p>\n<p>\n	Optimize data workflow to ensure the best possible user experience<\/p>\n<p>\n	Ensure that coding best practices are adhered to<\/p>\n<p>\n	Collaborate with alog, application and UI developers to define data structure that links data source to the application<\/p>\n<p>\n	Participate with a global team where members are split across continents and time zones<\/p>\n<p>\n	Participate in product testing<\/p>\n<p>\n	Write project documentation<\/p>\n<p>\n	Mentor junior team members<\/p>\n<p>\n	Cross train teammates<\/p>\n<p>\n	Monitor alternative ETL / backend technology stacks and development tools to ensure our choices continue to be appropriate<\/p>\n<p>\n	 <\/p><p><b>Qualifications<\/b> <\/p> <p>\n	Engineering Graduate with 5 - 7 years of relevant experience<\/p>\n<p>\n	5 years data engineering / backend development experience<\/p>\n<p>\n	3 years Python/SQL/Java/scripting development experience<\/p>\n<p>\n	Leadership or autonomy on a team<\/p>\n<p>\n	Experience working on a multinational development team<\/p>\n<p>\n	Good communication and writing skills<\/p>",
+                "identifier": {
+                    "@type": "PropertyValue",
+                    "name": "KLA Careers 2018 Re-Brand"
+                },
+                "datePosted" : "2019-05-29 07:15:08 UTC",
+                "hiringOrganization" : {
+                    "@type" : "Organization",
+                    "name" : "KLA Careers 2018 Re-Brand"
+                },
+                "jobLocation" : {
+                    "@type" : "Place",
+                    "address" : {
+                        "@type" : "PostalAddress",
+                        "streetAddress" : "KLA-Tencor Software India Pvt. Ltd Prince Infocity",
+                        "addressLocality" : "Chennai",
+                        "addressRegion" : "",
+                        "postalCode" : "600096",
+                        "addressCountry": "India"
+                    }
+                }
+            }
+        </script>
+    
+
+    <div class="row">
+        <div class="column">
+            <div id="job-search" class="background-white with-shadow padded-h">
+                <div class="cs_item_type_jobsearch cs_cfix cs_jsearchform">
+                    <form method="get" action="/jobs/search" id="search_form">
+                        <div class="row">
+                            <div class="medium-9 large-10 columns">
+                                <div class="row">
+                                    <div class="medium-8 columns banner__search-form-fields">
+                                        <input type="text" name="q" placeholder="Search Keyword or Job ID" id="cs_jobsearchforminput_9ZQ7" />
+                                    </div>
+                                    <div class="medium-4 columns banner__search-form-fields">
+                                        <input type="text" name="location" placeholder="Enter a Location" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="medium-3 large-2 columns">
+                                <input type="submit" value="Search" class="button-primary button-primary-indigo button-primary-full-width" />
+                            </div>
+                        </div>
+                    </form>
+                    <script>
+                        // Job Search form: autocomplete Keyword field
+                        jtm_autocomplete.register("9ZQ7");
+                    </script>
+                </div>
+            </div><!--/#job-search-->
+        </div>
+    </div>
+
+    
+    
+  
+    <div class="row">
+        <div class="column">
+            <div class="background-white page-section padded-h with-shadow">
+
+                <div class="row job-details">
+                    <div class=" large-9 columns">
+                        <!-- <div class="page__breadcrumbs">
+                            <a href="https://careers.kla-tencor.com/">Home</a> / <a href="/jobs/search/">Job Search</a> / Data Engineer / Backend Developer
+                        </div> -->
+                        <h1>Data Engineer / Backend Developer</h1>
+                        
+                        
+
+                        <div class="row">
+                            <div class="medium-7 columns job-details__content-info">
+                                <div><strong>Job Opening ID:</strong> 120643</div>
+                                <div><a href="https://careers.kla-tencor.com/jobs/location/104621/chennai-india">Chennai, India</a></div>
+                                <div>Full-Time</div>
+                                <div>Regular</div>
+                            </div>
+                            <div class="medium-5 columns small-text-left medium-text-right job-details__content-apply-social">
+                                <div id="apply--top" class="button-primary-outer button-primary-indigo-outer">
+                                    
+                                        
+                                            <div class="cs_item_apply_button" id="cs_item_apply_button_4125230"><a href="#start" class="cs_item_apply_button_link social_apply" id="job_link_4125230" rel="nofollow">Apply for this Job</a></div><script type="text/javascript">var cs_apply_settings = $cs.parseJSON('{\"job_id\":\"4125230\",\"url\":\"https://apply.talemetry.com\",\"company\":\"tencor\",\"subdomain\":\"klacareers-rebrand\",\"career_site_id\":5441,\"return_page_permalink\":\"thank-you\",\"req_number\":\"120643-1A\",\"workflow\":8844,\"workflow_tag\":\"IND\",\"company_id\":396,\"external_job_id\":\"120643\",\"real_external_job_id\":\"120643-1A\",\"internal_job_id\":\"4125230\",\"audit_activity\":true,\"web_tracking_id\":\"x_08fd467e-f68b-4f46-a825-f5ba47a9f481\",\"web_tracking_session_id\":\"x_8b8cfb76-05b5-47b2-816e-b40343750a8f\",\"context_id\":null,\"finished\":\"https://careers.kla-tencor.com/pages/thank-you\",\"apply_key\":\"9d8a6cc0-6f6d-4bb9-8ab5-0c31954b0dea\"}');csns.apply.setup_job_apply_link(cs_apply_settings, 2);</script>
+                                        
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="job-details__content-description">
+                            <p><b>Company Overview</b> </p> <p><span style="color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;  background-color: rgb(255, 255, 255); display: inline !important; float: none;">Calling the adventurers ready to join a company that's pushing the limits of nanotechnology to keep the digital revolution rolling. At KLA, we're making technology advancements that are bigger—and tinier—than the world has ever seen.</span><br style="color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;  background-color: rgb(255, 255, 255);"><br style="color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;  background-color: rgb(255, 255, 255);"><span style="color: rgb(34, 34, 34); font-family: Arial, Verdana, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;  background-color: rgb(255, 255, 255); display: inline !important; float: none;">Who are we?  We research, develop, and manufacture the world's most advanced inspection and measurement equipment for the semiconductor and nanoelectronics industries. We enable the digital age by pushing the boundaries of technology, creating tools capable of finding defects smaller than a wavelength of visible light. We create smarter processes so that technology leaders can manufacture high-performance chips—the kind in that phone in your pocket, the tablet on your desk and nearly every electronic device you own—faster and better. We're passionate about creating solutions that drive progress and help people do what wouldn't be possible without us.  The future is calling. Will you answer?</span></p><p><b>Group/Division</b> </p> <p>	The Information Technology (IT) group at KLA is involved in every aspect of the global business. IT’s mission is to enable business growth and productivity by connecting people, process, and technology. It focuses not only on enhancing the technology that enables our business to thrive but also on how employees use and are empowered by technology. This integrated approach to customer service, creativity and technological excellence enables employee productivity, business analytics, and process excellence.</p><p><b>Responsibilities</b> </p> <p>
+	<strong><em>Job Role: </em></strong></p>
+<ul>
+	<li>
+		<p>
+			This person would be a data engineer and backend developer for the IT Engineering application development team. This team member will be expected to work across several active projects to lead the development of the backend data workflow system that will integrate data from our existing back-end source to the algo, application and UI stack. Some projects are already in progress, to this developer would need to quickly come up to speed and continue development through project completion. Other projects are just getting started, and this developer would need to build the front end for the entire project from scratch. </p>
+		<p>
+			In addition to the core development tasks, we expect this person to monitor the technology landscape and ensure that the technologies that we are using are appropriate. We want to be sure that we are using the most feature rich tools, without incurring too much technology risk. </p>
+		<p>
+			This position is considered a senior position, so it assumed that educating other team members and mentoring junior teammates is included in the job responsibilities.</p>
+	</li>
+</ul>
+<p>
+	<strong><u>Responsibilities:</u></strong></p>
+<p>
+	Lead multiple data engineering / backend development projects simultaneously.</p>
+<p>
+	Optimize data workflow to ensure the best possible user experience</p>
+<p>
+	Ensure that coding best practices are adhered to</p>
+<p>
+	Collaborate with alog, application and UI developers to define data structure that links data source to the application</p>
+<p>
+	Participate with a global team where members are split across continents and time zones</p>
+<p>
+	Participate in product testing</p>
+<p>
+	Write project documentation</p>
+<p>
+	Mentor junior team members</p>
+<p>
+	Cross train teammates</p>
+<p>
+	Monitor alternative ETL / backend technology stacks and development tools to ensure our choices continue to be appropriate</p>
+<p>
+	 </p><p><b>Qualifications</b> </p> <p>
+	Engineering Graduate with 5 - 7 years of relevant experience</p>
+<p>
+	5 years data engineering / backend development experience</p>
+<p>
+	3 years Python/SQL/Java/scripting development experience</p>
+<p>
+	Leadership or autonomy on a team</p>
+<p>
+	Experience working on a multinational development team</p>
+<p>
+	Good communication and writing skills</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-6 columns spacer">
+                                
+                                    
+                                        <a href="javascript:void(0);" class="button-primary button-primary-indigo" id="apply--bottom">Apply for this Job</a>
+                                    
+                                
+                            </div>
+                            <div class="medium-6 columns job-details__social-media spacer">
+                                <!-- share -->
+                                <div class="cs_share_container cs_cfix">
+                                    <span class="cs_share_email--manual">
+                                    <a class="cs_email_btn" href="mailto:?body=Data Engineer / Backend Developer%20in%20Chennai,%20:%20https://careers.kla-tencor.com//jobs/4125230-data-engineer-slash-backend-developer"></a>
+                                    </span>
+                                    <span class="cs_share_google"></span>
+                                    <span class="cs_share_twitter"></span>
+                                    <span class="cs_share_facebook"></span>
+                                    <span class="cs_share_linkedin"></span>
+                                    <script type="text/javascript">talemetry.share();</script>
+                                </div>
+                                <!-- share:end -->
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                        <div class="large-3 columns job-details__sidebar">
+                            <h2>Related Careers</h2>
+                            <div class="job-details__related-careers-list">
+                                
+                                    
+                                        <h4 class="no-space"><a href="https://careers.kla-tencor.com/jobs/4374616-analyst-info-sys-3">Analyst, Info Sys 3</a></h4>
+                                        <p>
+                                            
+                                                Chennai,
+                                            
+                                            
+                                            India
+                                        </p>
+                                    
+                                
+                                    
+                                        <h4 class="no-space"><a href="https://careers.kla-tencor.com/jobs/4284920-analyst-business-proc-3">Analyst, Business Proc 3</a></h4>
+                                        <p>
+                                            
+                                                Chennai,
+                                            
+                                            
+                                            India
+                                        </p>
+                                    
+                                
+                                    
+                                
+                                    
+                                        <h4 class="no-space"><a href="https://careers.kla-tencor.com/jobs/3677532-analyst-info-sys-4">Analyst, Info Sys 4</a></h4>
+                                        <p>
+                                            
+                                                Chennai,
+                                            
+                                            
+                                            India
+                                        </p>
+                                    
+                                
+                                    
+                                        <h4 class="no-space"><a href="https://careers.kla-tencor.com/jobs/3327503-senior-developer-power-bi">Senior Developer - Power BI</a></h4>
+                                        <p>
+                                            
+                                                Chennai,
+                                            
+                                            
+                                            India
+                                        </p>
+                                    
+                                
+                                    
+                                        <h4 class="no-space"><a href="https://careers.kla-tencor.com/jobs/3327502-sap-native-hana-modeller">SAP Native HANA Modeller</a></h4>
+                                        <p>
+                                            
+                                                Chennai,
+                                            
+                                            
+                                            India
+                                        </p>
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                </div><!--close .row.job-details-->
+
+            </div>
+        </div>
+    </div>
+   
+    <!-- END PAGE -->
+    </div>
+  </div>
+</div>
+<script type="text/javascript" charset="utf-8">//<![CDATA[
+//]]></script>
+
+
+            
+
+            <div id="footer" class="page-section background-blue-gradient background-dark relative-container layer-1">
+                <div class="footer-pattern"></div>
+                <div class="relative-container layer-2">
+                    <div class="row">
+                        <div class="columns large-3 footer__logo">
+                            <img src="/system/production/assets/143147/original/kla-logo--white.png" alt="KLA logo" class="spacer" />
+                        </div>
+                        <div class="columns large-9">
+                            <ul class="footer__menu clearfix">
+                                <li><a href="https://www.kla-tencor.com/">Home</a></li>
+                                <li><a href="http://www.kla-tencor.com/vision">Vision</a></li>
+                                <li><a href="https://www.kla-tencor.com/company">Company</a></li>
+                                <li><a href="https://www.kla-tencor.com/products">Products</a></li>
+                                <li><a href="https://www.kla-tencor.com/services">Services</a></li>
+                                <li><a href="https://careers.kla-tencor.com/">Careers</a></li>
+                                <li><a href="http://ir.kla-tencor.com/">Investors</a></li>
+                                <li><a href="https://www.kla-tencor.com/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="row">
+                        <div class="footer__copyright columns">
+                            <p class="small-text-left large-text-right">Copyright &copy; 2018. KLA Corporation. All Rights Reserved.</p>
+                            <ul class="footer__bottom-menu clearfix">
+                                <li><a href="http://www.kla-tencor.com/privacy-policy">Privacy Policy</a></li>
+                                <li><a href="http://www.kla-tencor.com/legal-notices">Legal</a></li>
+                                <li><a href="http://www.kla-tencor.com/cookie-policy">Cookie Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="columns footer__social-media small-text-center large-text-center">
+                            <h4>Follow Us On:</h4>
+                            <a target="_blank" href="https://www.facebook.com/KLAcorp/"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="https://twitter.com/KLAcorp"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/klacorp/"><i class="fa fa-linkedin"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/c/KLACorp"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!--close #footer-->
+
+            
+            <!--
+                <a href="javascript:void(0);" class="internal-link" data-open="internal-pre-message">
+                    If you are a current KLA-Tencor Employee, please apply through the KLA-Tencor Intranet on My Access.
+                </a>
+                <div id="internal-pre-message" class="reveal" data-reveal>
+                    <p>If you are a current KLA-Tencor Employee, please apply through the KLA-Tencor Intranet on <a href="https://ktcareers.kla.com/psp/ps/APPLICANT/HRMS/c/HRS_HRAM.HRS_CE.GBL" target="_blank">My Access</a>.</p>
+                    <p class="text-right"><a href="javascript:void(0);" class="button-primary" data-close aria-label="Close reveal">Exit</a></p>
+                </div>
+            -->
+            
+
+        </div><!--close #page-container-->
+
+        <!--Privacy / Cookie Policy-->
+        <style>
+  
+          .cookie-banner { 
+            background: #1E076A;
+            color: white;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: 0.3s all ease-in-out;
+            z-index: 999999;
+          }
+          
+          .cookie-banner:not(.accepted) {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          .cookie-banner a {
+            color: #0089c4 !important;
+            transition: 0.25s color ease-in-out;
+          }
+          
+          .cookie-banner a:hover {
+            color: #47bbed !important;
+          }
+
+          .cookie-banner .inner {
+            padding: 20px 15px;
+            margin: 0 auto;
+            max-width: 1200px;
+          }
+
+          .cookie-banner .btn {
+            border-radius: 5px;
+            color: white;
+            background: #0089c4;
+            padding: 10px;
+            text-transform: uppercase;
+            top: 0;
+            left: 0;
+            width: 145px;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            border: 0;
+            margin: 0;
+            text-shadow: none;
+            box-shadow: none;
+            font-weight: bold;
+            transition: 0.25s background-color ease-in-out;
+            line-height: normal;
+          }
+          
+          .cookie-banner .btn:hover {
+            background-color: #47bbed;
+          }
+          
+          .cookie-banner .row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+          }
+
+          .cookie-banner p {
+            color: white;
+            margin: 0;
+          }
+          
+          .cookie-banner, .cookie-banner * {
+            box-sizing: border-box;
+          }
+
+          .cookie-banner * {
+            font-size: 14px !important;
+          }
+          
+          @media only screen and (max-width: 769px) {
+            .cookie-banner .btn { margin-top: 20px; }
+          }
+
+        </style>
+
+        <div class="cookie-banner accepted">
+          <div class="inner">
+            <div class="row">
+              <p>By using this site, you agree to our updated <a href="http://www.kla-tencor.com/privacy-policy">Privacy Policy</a> and our <a href="http://www.kla-tencor.com/cookie-policy">Cookie Policy</a>.</p>
+              <button id="acceptCookies" class="btn">I accept</button>
+            </div>
+          </div>
+        </div>
+
+        <script>
+
+          var banner = null;
+          window.onload = function() {
+            banner = document.querySelector('.cookie-banner');
+            var cook = getCookie('acceptCookies');
+            if (cook != 'true') {
+              banner.classList.remove('accepted');
+              document.getElementById('acceptCookies').addEventListener('click', function() {
+                setCookie('acceptCookies', 'true', 365);
+                banner.classList.add('accepted');
+              });
+            }
+          }
+
+          function setCookie(name, value, days) {
+            var d = new Date;
+            d.setTime(d.getTime() + 24*60*60*1000*days);
+            document.cookie = name + '=' + value + ';path=/;expires=' + d.toGMTString();
+          }
+
+          function getCookie(name) {
+            var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+            return v ? v[2] : null;
+          }
+
+        </script>
+        <!--end Privacy / Cookie Policy-->
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+        <script>
+            $(document).foundation();
+            $(document).ready(function(){
+                /*
+                    document.cookie = 'c_first=1;expires=';
+                    $('.internal-link')[0].click();
+                */
+            });
+        </script>
+        <div class="required_footer">
+  <script type="text/javascript" charset="utf-8">//<![CDATA[
+
+    var referral_source_id;
+    referral_source_id = 370;
+
+    var params_value = [];
+    params_value["location_city"] = "";
+  //]]></script>
+
+
+    <script src="https://sitestats.ttcportals.com/101161802.js" type="text/javascript"></script>
+    <noscript><img height="1" width="1" src="https://sitestats.ttcportals.com/101161802-db80.gif" alt="stats" /></noscript>
+<script type="text/javascript">
+  var clicky_custom = clicky_custom || {};
+  clicky_custom.sticky_data_disable = 1;
+</script>
+
+  <script type='text/javascript' src='https://apply.talemetry.com/assets/direct_apply.js?verison=2.1'></script>
+</div>
+
+
+    </body>
+</html>

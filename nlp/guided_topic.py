@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May 29 12:31:42 2019
+
+@author: 10541
+"""
+
+import numpy as np
+import guidedlda
+X = guidedlda.datasets.load_data(guidedlda.datasets.NYT)
+
+vocab = guidedlda.datasets.load_vocab(guidedlda.datasets.NYT)
+
+word2id = dict((v, idx) for idx, v in enumerate(vocab))
+model = guidedlda.GuidedLDA(n_topics=5, n_iter=100, random_state=7, refresh=20)
+
+model.fit(X)
+
+topic_word = model.topic_word_
+
+n_top_words = 8
+
+
+for i, topic_dist in enumerate(topic_word):
+     topic_words = np.array(vocab)[np.argsort(topic_dist)][:-(n_top_words+1):-1]
+     print('Topic {}: {}'.format(i, ' '.join(topic_words)))
+     
+seed_topic_list = [['game', 'team', 'win', 'player', 'season', 'second', 'victory'],
+                    ['percent', 'company', 'market', 'price', 'sell', 'business', 'stock', 'share'],
+                    ['music', 'write', 'art', 'book', 'world', 'film'],
+                    ['political', 'government', 'leader', 'official', 'state', 'country', 'american','case', 'law', 'police', 'charge', 'officer', 'kill', 'arrest', 'lawyer']]
+
+
+model = guidedlda.GuidedLDA(n_topics=5, n_iter=100, random_state=7, refresh=20)
+seed_topics = {}
+for t_id, st in enumerate(seed_topic_list):
+     for word in st:
+         seed_topics[word2id[word]] = t_id

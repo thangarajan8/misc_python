@@ -1,0 +1,12 @@
+[11-23 19:07:36]  {E:/learnings/python/logger_vini.py:28}                             INFO - sample info
+[11-23 19:07:37]  {E:/learnings/python/logger_vini.py:28}                             INFO - sample info
+[11-23 19:07:37]  {E:/learnings/python/logger_vini.py:28}                             INFO - sample info
+[11-23 19:07:38]  {E:/learnings/python/logger_vini.py:28}                             INFO - sample info
+[11-23 19:07:38]  {E:/learnings/python/logger_vini.py:28}                             INFO - sample info
+[11-23 19:07:38]  {E:/learnings/python/logger_vini.py:28}                             INFO - sample info
+[11-23 19:07:49]  {logger_vini.py:28}                             INFO - sample info
+[11-23 19:08:06]  {logger_vini.py:28}                             INFO - sample info
+[11-23 19:08:06]  {logger_vini.py:29}                             ERROR - Sample Error
+[11-23 19:08:41]  {logger_vini.py:28}                             INFO - Sample Info
+[11-23 19:08:41]  {logger_vini.py:29}                             ERROR - Sample Error
+[11-23 19:08:41]  {logger_vini.py:30}                             WARNING - Sample Warning
