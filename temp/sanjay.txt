@@ -1,3 +1,0 @@
-closing
-getting text angle rotaion 
-adaptive thresholding
