@@ -1,0 +1,9 @@
+﻿identifier,name,dob,qualification,adressType,addressline,city,state
+1,ram,10/1/1980,BE,temporary,gandhi road,chennai,tamilnadu
+1,ram,10/1/1980,MBA,temporary,gandhi road,chennai,tamilnadu
+1,ram,10/1/1980,BE,permanent,gandhi road,trichy,tamilnadu
+1,ram,10/1/1980,MBA,permanent,gandhi road,trichy,tamilnadu
+2,sita,10/1/1990,MBBS,temporary,gandhi road,chennai,tamilnadu
+2,sita,10/1/1990,MD,temporary,gandhi road,chennai,tamilnadu
+2,sita,10/1/1990,MBBS,permanent,gandhi road,trichy,tamilnadu
+2,sita,10/1/1990,MD,permanent,gandhi road,trichy,tamilnadu

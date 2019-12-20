@@ -5,12 +5,12 @@ Created on Mon Feb 18 18:10:36 2019
 @author: 10541
 """
 
-cols = 10
+cols = 10+20+20
 rows = cols * 3
 mid = int((rows - 3) / 2)
-sym1 = '-'
-sym2 = '.|.'
-title = '@@THANGA@@'
+sym1 = 'T'
+sym2 = '.V.'
+title = '@@THANGA WEDS VINI@@'
 title_length = len(title)
 title_position = int((rows - title_length) / 2)
 half_mid_pos = int(cols/2)

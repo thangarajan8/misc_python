@@ -1,0 +1,51 @@
+{
+  users: [
+    {
+      id: 1,
+      name: 'ram',
+      dob: '1980-01-10',
+      age: 39,
+      qualifications: [
+        'BE',
+        'MBA'
+      ],
+      addresses: [
+        {
+          type: 'temporary',
+          line: 'gandhiroad',
+          city: 'chennai',
+          state: 'tamilnadu'
+        },
+        {
+          type: 'permanent',
+          line: 'gandhiroad',
+          city: 'trichy',
+          state: 'tamilnadu'
+        }
+      ]
+    },{
+      id: 2,
+      name: 'sita',
+      dob: '1990-01-10',
+      age: 29,
+      qualifications: [
+        'MBBS',
+        'MD'
+      ],
+      addresses: [
+        {
+          type: 'temporary',
+          line: 'gandhiroad',
+          city: 'chennai',
+          state: 'tamilnadu'
+        },
+        {
+          type: 'permanent',
+          line: 'gandhiroad',
+          city: 'trichy',
+          state: 'tamilnadu'
+        }
+      ]
+    }
+  ]
+}
