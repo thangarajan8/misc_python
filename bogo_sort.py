@@ -23,6 +23,6 @@ def bogosort(nums:list):
 
 
 counter = 0
-numbers = [8,7,6,5,5,4,3,2,1,11] 
+numbers = [9,8,7,4,5,6,2,1,3]
 result = bogosort(numbers)
 print(counter)
