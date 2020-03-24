@@ -1,0 +1,14 @@
+<encspot>
+  <file>
+   <Name>some filename.mp3</Name>
+   <Encoder>Gogo (after 3.0)</Encoder>
+   <Bitrate>131</Bitrate>
+   <Mode>joint stereo</Mode>
+   <Length>00:02:43</Length>
+   <Size>5,236,644</Size>
+   <Frame>no</Frame>
+   <Quality>good</Quality>
+   <Freq.>44100</Freq.>
+   <Frames>6255</Frames>
+  </file>
+</encspot>
