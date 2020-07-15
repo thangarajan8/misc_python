@@ -1,0 +1,6 @@
+10/04/2020, 03:05 - ABC: Like if number is 0011 0111
+And bitNumber is 4 
+Then function si
+10/04/2020, 03:08 - ABC: Question 6
+Take a char variable, apply a same as number
+10/04/2020, 03:08 - ABC: Example If my variable is 0X3C answer should be same

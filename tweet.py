@@ -12,7 +12,7 @@ import json
 from pymongo import MongoClient
 cliet = MongoClient()
 db = cliet['twt']
-col = db['coro']
+col = db['movie']
 #consumer key, consumer secret, access token, access secret.
 ckey="LWrTypAuRTiwsTdVvX3UKhzOA"
 csecret="JxAT3XCN0sxJJxIej06KLFUlTPGCL3Zc7vPW243CJ7OIbFbMsR"
@@ -38,4 +38,4 @@ auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
 
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["coronavirus"])
+twitterStream.filter(track=["coronavirus","CoronavirusOubreak"])
