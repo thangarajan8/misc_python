@@ -1,0 +1,125 @@
+1594880133878	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\5034100\\AppData\\Local\\Temp\\rust_mozprofileYpkjLE"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594880136519	Marionette	INFO	Listening on port 54912
+1594880137002	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594880140511	Marionette	INFO	Stopped listening on port 54912
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1594880161132	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\5034100\\AppData\\Local\\Temp\\rust_mozprofilewgZ6fD"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594880164499	Marionette	INFO	Listening on port 54959
+1594880164753	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594880166938	Marionette	INFO	Stopped listening on port 54959
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594880760216	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\5034100\\AppData\\Local\\Temp\\rust_mozprofile4O8hOl"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594880763324	Marionette	INFO	Listening on port 55075
+1594880763400	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594880775869	Marionette	INFO	Stopped listening on port 55075
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594880833198	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\5034100\\AppData\\Local\\Temp\\rust_mozprofileznSHOG"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594880836440	Marionette	INFO	Listening on port 55126
+1594880836815	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www1.nseindia.com/js/calendar/cal2.js, line 524: TypeError: document.routeEvent is not a function
+JavaScript error: https://www1.nseindia.com/js/calendar/cal2.js, line 524: TypeError: document.routeEvent is not a function
+JavaScript error: https://www1.nseindia.com/js/calendar/cal2.js, line 524: TypeError: document.routeEvent is not a function
+JavaScript error: https://www1.nseindia.com/js/calendar/cal2.js, line 524: TypeError: document.routeEvent is not a function
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/js/calendar/cal2.js, line 524: TypeError: document.routeEvent is not a function
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/js/calendar/cal2.js, line 524: TypeError: document.routeEvent is not a function
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/common/js/js.js, line 85: ReferenceError: getTopGainersData is not defined
+JavaScript error: https://www1.nseindia.com/js/calendar/cal2.js, line 524: TypeError: document.routeEvent is not a function
+JavaScript error: https://www1.nseindia.com/js/calendar/cal2.js, line 524: TypeError: document.routeEvent is not a function
+JavaScript error: resource://gre/modules/IndexedDB.jsm, line 370: UnknownError: IDBDatabase.transaction: Can't start IndexedDB transaction during shutdown
+1594881739099	Marionette	INFO	Stopped listening on port 55126
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594884589398	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\5034100\\AppData\\Local\\Temp\\rust_mozprofilegRjdRZ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594884595399	Marionette	INFO	Listening on port 56770
+1594884595685	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594884623225	Marionette	INFO	Stopped listening on port 56770
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594884644035	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\5034100\\AppData\\Local\\Temp\\rust_mozprofile7NuX1Y"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594884648736	Marionette	INFO	Listening on port 56858
+1594884649870	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1594902521497	Marionette	INFO	Stopped listening on port 56858
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594958482501	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\5034100\\AppData\\Local\\Temp\\rust_mozprofiler7ofUO"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594958499863	Marionette	INFO	Listening on port 51801
+1594958501399	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594971042835	Marionette	INFO	Stopped listening on port 51801
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594971051069	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\5034100\\AppData\\Local\\Temp\\rust_mozprofileNXlbEy"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594971053859	Marionette	INFO	Listening on port 53702
+1594971054186	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594975834612	Marionette	INFO	Stopped listening on port 53702
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+re/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594971121896	Marionette	INFO	Listening on port 53746
+1594971122140	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594972458214	Marionette	INFO	Stopped listening on port 53746
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1594975838947	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\5034100\\AppData\\Local\\Temp\\rust_mozprofilecCRgWL"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594975843635	Marionette	INFO	Listening on port 54818
+1594975843688	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594978446575	Marionette	INFO	Stopped listening on port 54818
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
