@@ -6,4 +6,5 @@ Created on Tue Sep 17 23:19:16 2019
 """
 
 word = 'employeeSalaryStatus'
-len([i for i in word if i.isupper()])
+x = len([i for i in word if i.isupper()])
+print(x)
